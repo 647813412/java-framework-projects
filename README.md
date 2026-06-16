@@ -1,38 +1,49 @@
 # Java Framework Projects
 
-基于 Java 生态框架（Spring Boot、Spring Cloud、Spring AI 等）构建的项目集合。
+基于 Java 生态的全栈项目实践集合，涵盖 Spring Boot 后端、Vue 前端、分布式中间件等技术栈的完整案例。
 
-## 仓库结构
+## 项目列表
+
+| 项目 | 说明 | 技术栈 |
+|------|------|--------|
+| [you-picture](./you-picture) | 优图 — 图片管理与分享平台 | Spring Boot 2.7 + Vue 3 + MyBatis-Plus + Redis + COS + ShardingSphere |
+| [wuoj-backend-microservice](./wuoj-backend-microservice) | 在线判题系统（OJ）后端微服务 | Spring Boot 2.6 + Spring Cloud Alibaba + Nacos + Sentinel + Gateway + Redis + RabbitMQ |
+
+## 目录结构
 
 ```
 java-framework-projects/
-├── README.md                 ← 本文件
-└── ...                       ← 项目持续加入
+├── you-picture/                       # 优图（全栈项目）
+│   ├── you-picture-backend/           # Spring Boot 后端
+│   ├── picture/                       # Vue 3 前端
+│   └── README.md                      # 子项目文档
+├── wuoj-backend-microservice/         # OJ 在线判题系统（微服务）
+│   ├── wuoj-backend-common/           # 公共模块
+│   ├── wuoj-backend-model/            # 数据模型
+│   ├── wuoj-backend-gateway/          # API 网关
+│   ├── wuoj-backend-user-service/     # 用户服务
+│   ├── wuoj-backend-question-service/ # 题目服务
+│   ├── wuoj-backend-judge-service/    # 判题服务
+│   ├── wuoj-backend-service-client/   # Feign 客户端
+│   └── README.md                      # 子项目文档
+├── .gitignore
+└── README.md
 ```
-
-## 技术栈
-
-| 领域 | 技术 |
-|------|------|
-| 核心框架 | Spring Boot 3.x、Spring Cloud、Spring AI |
-| LLM 集成 | LangChain4j、Spring AI、Spring AI Alibaba |
-| 数据访问 | Spring Data JPA、MyBatis、Redis |
-| 消息队列 | RabbitMQ、Kafka |
-| 服务治理 | Nacos、Sentinel、Gateway |
-| 权限认证 | Sa-Token、Spring Security、OAuth2 |
-| 数据库 | MySQL、PostgreSQL |
-| 构建工具 | Maven、Gradle |
-
-## 快速开始
-
-每个子项目可独立构建运行，进入对应目录查看其 README 了解更多。
 
 ## 环境要求
 
-- Java 21+
-- Maven 3.6+ / Gradle 8+
-- Docker（部分微服务项目需要）
+| 工具 | 版本 | 说明 |
+|------|------|------|
+| JDK | 1.8+ / 17（微服务） | 后端运行环境 |
+| Maven | 3.6+ | 后端构建工具 |
+| Node.js | 18+ | 前端构建工具 |
+| MySQL | 8.0+ | 关系型数据库 |
+| Redis | 6.0+ | 缓存与 Session |
 
----
+## 使用说明
 
-*更多 Java 框架项目持续加入中…*
+每个子项目均包含独立的 README 文档，涵盖功能说明、技术架构、部署步骤与项目结构，请进入对应目录查阅。
+
+## License
+
+MIT

@@ -1,0 +1,119 @@
+/* ==============================================
+   图库社区 — 设计令牌 (CSS Variables)
+   基于 DESIGN.md — 暖色古风系统
+   ============================================== */
+
+:root {
+  /* ===== 色彩系统 ===== */
+
+  /* 品牌色 — 朱砂红 */
+  --color-primary: #e60023;
+  --color-primary-hover: #cc001f;
+  --color-primary-pressed: #b3001b;
+
+  /* 成功 / 自然 */
+  --color-green: #103c25;
+  --color-green-hover: #0b2819;
+
+  /* 文字 */
+  --color-text-primary: #211922;     /* 梅色近黑 */
+  --color-text-secondary: #62625b;   /* 橄榄灰 */
+  --color-text-disabled: #91918c;    /* 暖银灰 */
+  --color-text-inverse: #ffffff;
+
+  /* 交互 */
+  --color-focus: #435ee5;
+  --color-link: #2b48d4;
+  --color-error: #9e0a0a;
+
+  /* 表面 & 背景 */
+  --color-bg: #ffffff;
+  --color-bg-warm: #f6f6f3;         /* 宣纸白 */
+  --color-surface-sand: #e5e5e0;    /* 砂灰 */
+  --color-surface-warm: #e0e0d9;    /* 暖浅灰 */
+  --color-surface-dark: #33332e;    /* 深色区域 */
+
+  /* 边框 */
+  --color-border: #91918c;
+  --color-border-hover: #bcbcb3;
+  --color-border-disabled: #c8c8c1;
+
+  /* ===== 字体 ===== */
+  --font-display: "LXGW WenKai", "霞鹜文楷", "Noto Serif SC", "Source Han Serif SC", "KaiTi", "楷体", serif;
+  --font-body: "Pin Sans", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* ===== 字号 ===== */
+  --text-display: 4.38rem;    /* 70px */
+  --text-heading: 1.75rem;    /* 28px */
+  --text-body: 1rem;           /* 16px */
+  --text-caption-bold: 0.88rem; /* 14px */
+  --text-caption: 0.75rem;     /* 12px */
+
+  /* ===== 字重 ===== */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ===== 间距 ===== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 80px;
+
+  /* ===== 圆角 ===== */
+  --radius-base: 8px;
+  --radius-sm: 12px;
+  --radius-button: 16px;
+  --radius-card: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 32px;
+  --radius-hero: 40px;
+  --radius-circle: 50%;
+
+  /* ===== 阴影 ===== */
+  --shadow-subtle: 0 1px 3px rgba(33, 25, 34, 0.06);
+  --shadow-card: 0 2px 8px rgba(33, 25, 34, 0.08);
+
+  /* ===== 过渡 ===== */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+/* ===== 暗色主题 ===== */
+html.dark {
+  /* 品牌色保持不变 */
+  --color-primary: #e60023;
+  --color-primary-hover: #ff1a3a;
+  --color-primary-pressed: #cc001f;
+
+  /* 文字 */
+  --color-text-primary: #f0ece8;
+  --color-text-secondary: #a8a8a0;
+  --color-text-disabled: #6a6a64;
+  --color-text-inverse: #211922;
+
+  /* 交互 */
+  --color-focus: #6b8aff;
+  --color-link: #7b9dff;
+  --color-error: #ff6b6b;
+
+  /* 表面 & 背景 */
+  --color-bg: #1a1a18;
+  --color-bg-warm: #222220;
+  --color-surface-sand: #2e2e2b;
+  --color-surface-warm: #353530;
+  --color-surface-dark: #111110;
+
+  /* 边框 */
+  --color-border: #4a4a44;
+  --color-border-hover: #6a6a62;
+  --color-border-disabled: #3a3a36;
+
+  /* 阴影 */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
